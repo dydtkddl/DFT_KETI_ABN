@@ -1,0 +1,72 @@
+&CONTROL
+  calculation = 'relax'    
+  forc_conv_thr =  5.0e-4 
+  etot_conv_thr = 1.0e-5  
+  max_seconds   =  1.72800e+05 
+  nstep         = 100          
+  pseudo_dir = '/home/yongsang/Research/PSID_server_room/qe/[00]QE/qepseudo/SSSP_1.3.0_PBE_efficiency' 
+  outdir = './tmp'
+  restart_mode = 'from_scratch' 
+  prefix = 'ptoluidine'  
+  tprnfor = .true.        
+  tstress = .true.       
+  verbosity = 'high' 
+/
+
+&SYSTEM
+    a           =  2.50000e+01
+    ecutwfc = 40.0     
+    ecutrho = 280.0   
+    ibrav       = 1
+    nat         = 17
+    ntyp        = 3
+    occupations = 'smearing'
+    smearing = 'mv'     
+    degauss = 0.02      
+    nosym = .TRUE.
+    vdw_corr='grimme-d3'
+/
+
+&ELECTRONS
+  conv_thr = 1e-6        
+  electron_maxstep = 200
+  mixing_beta = 0.4   
+  diagonalization = 'david'  
+  startingwfc = "atomic+random"
+  startingpot = "atomic"
+/
+
+&IONS
+    ion_dynamics = "bfgs"
+/
+
+&CELL
+  cell_dofree = 'all'   
+/
+
+ATOMIC_SPECIES
+N      14.00674  N.pbe-n-radius_5.UPF
+C      12.01070  C.pbe-n-kjpaw_psl.1.0.0.UPF
+H       1.00794  H.pbe-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+N       -2.8095130853      0.1531312090      0.0597517382                 
+C        1.4171801274      0.0104170310      0.0080078058                 
+C       -1.3938528458      0.1051623054      0.0425835292                 
+C        0.6689603979     -1.1773399444      0.0350176131                 
+C        0.7503792274      1.2445224080     -0.0014274606                 
+C       -0.7285155976     -1.1293275861      0.0521834235                 
+C       -0.6469656019      1.2917605644      0.0157658830                 
+C        2.9167101881     -0.0252856685     -0.0109322181                 
+H        1.1643571323     -2.1403025519      0.0427351817                 
+H        1.3133438931      2.1696828458     -0.0221676771                 
+H       -1.2920854266     -2.0537396650      0.0728795702                 
+H       -1.1467502048      2.2523341251      0.0081108700                 
+H        3.3139031642      0.5038167360      0.8808023678                 
+H        3.3007322360     -1.0675854316     -0.0006486384                 
+H        3.2902718659      0.4771912832     -0.9279319252                 
+H       -3.3055965567      1.0564095703      0.0526984789                 
+H       -3.3652847669     -0.7145073411      0.0792618435                 
+
+K_POINTS automatic 
+  3 3 1  0 0 0  
