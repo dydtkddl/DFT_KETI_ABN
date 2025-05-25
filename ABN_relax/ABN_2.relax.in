@@ -1,0 +1,59 @@
+&CONTROL
+    calculation   = "relax"
+    forc_conv_thr =  1.00000e-03
+    max_seconds   =  1.72800e+05
+    nstep         = 100
+    pseudo_dir    = "/home/ys/qe-7.3.1/pseudo/Standard_solid-state_pseudopotentials_SSSP_1.3.0_PBE_efficiency"
+    outdir = "/home/ys/Research/PSID_server_room/qe/ABN_relax"
+/
+
+&SYSTEM
+    a           =  2.50000e+01
+    degauss     =  1.00000e-02
+    ecutrho     =  400.00000  
+    ecutwfc     =  50.00000  
+    ibrav       = 1
+    nat         = 15
+    ntyp        = 3
+    occupations = "fixed"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&IONS
+    ion_dynamics = "bfgs"
+/
+
+&CELL
+/
+
+K_POINTS {gamma}
+
+ATOMIC_SPECIES
+N      14.00674  N.pbe-n-radius_5.UPF
+C      12.01070  C.pbe-n-kjpaw_psl.1.0.0.UPF
+H       1.00794  H.pbe-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+N       7.707368   4.570093   4.570788
+N       0.914026   4.570285   4.570276
+C       6.340872   4.570120   4.570541
+C       5.614194   3.357382   4.570513
+C       5.614258   5.782905   4.570495
+C       3.507154   4.570193   4.570413
+C       4.227388   3.359402   4.570459
+C       4.227452   5.780949   4.570440
+C       2.076530   4.570239   4.570340
+H       6.154868   2.407316   4.570550
+H       6.154977   6.732943   4.570513
+H       3.683981   2.412462   4.570431
+H       3.684082   6.727916   4.570395
+H       8.226233   5.435739   4.569471
+H       8.226187   3.704410   4.569481
+
