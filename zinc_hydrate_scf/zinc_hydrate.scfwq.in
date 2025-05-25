@@ -1,0 +1,62 @@
+&CONTROL
+    calculation = "scf"
+    max_seconds =  8.64000e+04
+    pseudo_dir    = "/home/ys/qe-7.3.1/pseudo/Standard_solid-state_pseudopotentials_SSSP_1.3.0_PBE_efficiency"
+    outdir = "/home/ys/Research/PSID_server_room/qe/zinc_hydrate_relax"
+/
+
+&SYSTEM
+    a           =  2.50000e+01
+    degauss     =  1.00000e-02
+    ecutrho     =  2.25000e+02
+    ecutwfc     =  2.50000e+01
+    ibrav       = 1
+    nat         = 19
+    ntyp        = 3
+    occupations = "fixed"
+    tot_charge    = 2   
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&IONS
+    ion_dynamics = "bfgs"
+/
+
+&CELL
+/
+
+K_POINTS {gamma} 
+
+ATOMIC_SPECIES
+Zn  65.39000  Zn_pbe_v1.uspp.F.UPF
+H    1.00794  H.pbe-rrkjus_psl.1.0.0.UPF
+O   15.99940  O.pbe-n-kjpaw_psl.0.1.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Zn               3.3032608358        3.3815582240        3.2542436477
+H                1.1247335223        2.6685670653        1.6436275613
+O                1.3476978687        3.0885636148        2.4932665597
+H                0.5156935231        3.3996468005        2.8914454370
+H                6.0842596717        3.4097045336        3.6870995999
+O                5.2345174448        3.7033533524        4.0606303941
+H                5.4238078945        4.1265948341        4.9165428909
+H                2.7465656239        5.6827481190        1.7254494307
+O                3.4368401413        5.2510428341        2.2597529370
+H                4.2049825815        5.8487693661        2.2788097800
+H                2.4264325660        0.8861885504        4.1682612401
+O                3.2014502053        1.4754918987        4.1753214391
+H                3.8658741215        1.0752797800        4.7638471567
+H                2.1908312549        3.8769549874        5.7898396010
+O                2.4887686722        4.3206599199        4.9763331776
+H                2.2846921051        5.2678848030        5.0724674004
+H                4.3461213052        1.5118550977        1.4534122325
+O                4.1144451574        2.4531666757        1.5395811273
+H                4.3765475047        2.8963105434        0.7135493870
+

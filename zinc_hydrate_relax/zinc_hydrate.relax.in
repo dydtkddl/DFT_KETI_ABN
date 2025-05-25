@@ -1,0 +1,63 @@
+&CONTROL
+    calculation   = "relax"
+    forc_conv_thr =  1.00000e-03
+    max_seconds   =  1.72800e+05
+    nstep         = 100
+    pseudo_dir    = "/home/ys/qe-7.3.1/pseudo/Standard_solid-state_pseudopotentials_SSSP_1.3.0_PBE_efficiency"
+    outdir = "/home/ys/Research/PSID_server_room/qe/zinc_hydrate_relax"
+/
+
+&SYSTEM
+    a           =  25.00000
+    degauss     =  1.00000e-02
+    tot_charge    = 2   
+    ecutrho     =  400.00000  
+    ecutwfc     =  50.00000  
+    ibrav       = 1
+    nat         = 19
+    ntyp        = 3
+    occupations = "fixed" 
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&IONS
+    ion_dynamics = "bfgs"
+/
+
+&CELL
+/
+
+K_POINTS {gamma} 
+
+ATOMIC_SPECIES
+Zn  65.39000  Zn_pbe_v1.uspp.F.UPF
+H    1.00794  H.pbe-rrkjus_psl.1.0.0.UPF
+O   15.99940  O.pbe-n-kjpaw_psl.0.1.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Zn      3.287903   3.407069   3.296056
+H       1.282320   2.471789   1.777728
+O       1.414007   3.251799   2.337351
+H       0.658008   3.279066   2.943423
+H       5.922076   3.553324   3.597825
+O       5.181250   3.536321   4.222743
+H       5.314043   4.289984   4.817306
+H       2.857467   5.466655   1.680455
+O       3.406891   5.350194   2.470545
+H       4.293136   5.658655   2.228681
+H       2.479474   0.921429   3.887046
+O       3.040400   1.582365   4.320391
+H       3.869971   1.129596   4.535737
+H       2.371515   3.862628   5.764970
+O       2.274867   4.309725   4.910855
+H       2.496556   5.240274   5.064658
+H       4.086239   1.568666   1.521493
+O       4.298940   2.502498   1.671104
+H       4.182459   2.942304   0.815114

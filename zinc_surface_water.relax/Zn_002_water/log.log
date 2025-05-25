@@ -1,0 +1,22 @@
+LAMMPS (4 Feb 2025)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:99)
+  using 1 OpenMP thread(s) per MPI task
+# LAMMPS Input File: Zn Surface + H2O (mW + OpenKIM H)
+units metal
+boundary p p f  # X, Y 방향 주기적(P), Z 방향 비주기적(F) (Zn 표면 모델)
+atom_style atomic
+
+# 데이터 파일 불러오기 (Zn 슬랩 + H2O 구조)
+read_data Zn_surface_H2O.data
+Reading data file ...
+  triclinic box = (0 0 0) to (10.4574 9.0563741 24.8732) with tilt (-5.2287 0 0)
+WARNING: Triclinic box skew is large. LAMMPS will run inefficiently. (src/domain.cpp:221)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  67 atoms
+  read_data CPU = 0.010 seconds
+
+# KIM 포텐셜 설정 (단독 사용)
+pair_style kim LJ_ElliottAkerson_2015_Universal__MO_959249795837_003
+ERROR: KIM ModelCreate failed (src/KIM/pair_kim.cpp:840)
+Last input line: pair_style kim LJ_ElliottAkerson_2015_Universal__MO_959249795837_003

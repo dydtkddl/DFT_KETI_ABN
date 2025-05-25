@@ -1,0 +1,46 @@
+**/*.dat
+**/*.xsf
+**/*.tmp*
+**/pwscf.save/*
+git_push.log
+# orca/**/*.densities
+## orca/**/*.densities
+## orca/**/*.gbw
+**/*.tmp
+**/*.wfc*
+# simulations/**/*.data
+**/Movies/
+**/VTK/
+**/Restart/
+**/*mep*.out
+*.bin
+**/20250408_RASPA_GUI_PROJECT_1
+**/*.xsf
+**/*.XSF
+**/charge-density
+**/charge_density
+**/valence-density
+**/valence_density
+**/total_density
+**/total-density
+**/charge-density.cube
+**/charge_density.cube
+**/valence-density.cube
+**/valence_density.cube
+**/total_density.cube
+**/total-density.cube
+## simulations/**/Output/
+**/~*
+# \[98\]archive/
+**/.git
+**/*.zip
+**/*.tar
+# GROMACS
+**/*.trr
+# **/*.xtc
+**/*.edr
+# *.log
+**/*.cpt
+\#*#
+*.sdf
+*.gz

@@ -1,0 +1,36 @@
+&CONTROL
+    calculation = "scf"
+    max_seconds =  8.64000e+04
+    pseudo_dir    = "/home/ys/qe-7.3.1/pseudo/Standard_solid-state_pseudopotentials_SSSP_1.3.0_PBE_efficiency"
+    outdir = "/home/ys/Research/PSID_server_room/qe/water_relax"
+/
+
+&SYSTEM
+    a           =  1.50000e+01
+    degauss     =  1.00000e-02
+    ecutrho     =  2.25000e+02
+    ecutwfc     =  2.50000e+01
+    ibrav       = 1
+    nat         = 3
+    ntyp        = 2
+    occupations = "fixed"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+K_POINTS {gamma} 
+
+ATOMIC_SPECIES
+O      15.99940  O.pbe-n-kjpaw_psl.0.1.UPF
+H       1.00794  H.pbe-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+O                0.4277851786        1.0001521984        1.1737804388
+H                1.3969406231        0.9783397675        1.1353231669
+H                0.1464641982        0.5422130341        0.3661293943

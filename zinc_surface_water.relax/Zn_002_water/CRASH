@@ -1,0 +1,21 @@
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     task #         1
+     from check_tempdir : error #         1
+     temporary directory /home/ys/Research/PSID_server_room/qe/zinc_surface_water.relax/Zn_002_water/ cannot be created or accessed
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     task #         0
+     from check_tempdir : error #         1
+     temporary directory /home/ys/Research/PSID_server_room/qe/zinc_surface_water.relax/Zn_002_water/ cannot be created or accessed
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     task #         2
+     from check_tempdir : error #         1
+     temporary directory /home/ys/Research/PSID_server_room/qe/zinc_surface_water.relax/Zn_002_water/ cannot be created or accessed
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
