@@ -1,0 +1,46 @@
+&CONTROL
+    calculation   = "relax"
+    forc_conv_thr =  1.00000e-03
+    max_seconds   =  1.72800e+05
+    nstep         = 100
+    pseudo_dir    = "/home/ys/qe-7.3.1/pseudo/Standard_solid-state_pseudopotentials_SSSP_1.3.0_PBE_efficiency"
+    outdir = "/home/ys/Research/PSID_server_room/qe/water_relax"
+/
+
+&SYSTEM
+    a           =  1.50000e+01
+    degauss     =  1.00000e-02
+    ecutrho     =  400.00000  
+    ecutwfc     =  50.00000  
+    ibrav       = 1
+    nat         = 3
+    ntyp        = 2
+    occupations = "fixed"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&IONS
+    ion_dynamics = "bfgs"
+/
+
+&CELL
+/
+
+K_POINTS {gamma} 
+
+ATOMIC_SPECIES
+O      15.99940  O.pbe-n-kjpaw_psl.0.1.UPF
+H       1.00794  H.pbe-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+O       0.425613   1.001682   1.176492
+H       1.391019   0.975128   1.129656
+H       0.154558   0.543895   0.369085
+
