@@ -1,0 +1,10 @@
+! B3LYP def2-SVP Opt TightSCF ALLPOP KEEPDENS
+
+%pal
+	nprocs 8
+end
+
+* xyz -1 2
+O          0.00000        0.00000        0.00000
+O          1.33000        0.00000        0.00000
+*

@@ -1,0 +1,16 @@
+! B3LYP def2-SVP OPT NormalSCF ALLPOP KEEPDENS D3BJ
+
+%pal
+nprocs 28
+end
+
+%maxcore 5000
+
+%scf
+ SmearTemp 500 
+end
+
+* xyz -1 2
+  O           0.00533670813972      0.00000000000000      0.00000000000000
+  O           1.32466329186028      0.00000000000000      0.00000000000000
+*

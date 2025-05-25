@@ -1,0 +1,12 @@
+! B3LYP def2-SVP SP TightSCF ALLPOP KEEPDENS ChelpG
+
+%maxcore 5000
+
+%pal
+nprocs 20
+end
+
+* xyz -1 2
+  O          -0.00459134471940      0.00000000000000      0.00000000000000
+  O           1.33459134471940      0.00000000000000      0.00000000000000
+*

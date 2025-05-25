@@ -1,0 +1,13 @@
+! B3LYP def2-SVP OPT TightSCF ALLPOP KEEPDENS D3BJ
+
+%maxcore 5000
+
+%pal
+nprocs 4
+end
+
+* xyz 0 1
+O          0.94900       -0.03600       -0.06349
+H          1.91688       -0.05890       -0.10388
+H          0.67015       -0.49371       -0.87076
+*
